@@ -1,0 +1,43 @@
+.main-btn {
+  position: relative;
+  border: inherit;
+  height: 50px;
+  border-radius: 4px;
+  background-color: $accent-text-color;
+  color: $white-text-color;
+  font-family: inherit;
+  font-weight: $font-weight-first;
+  font-size: $second-font-size;
+  line-height: 1.87;
+  letter-spacing: $letter-spacing-second;
+  text-align: center;
+  min-width: 200px;
+
+  transition: transform $main-transition-settings, box-shadow $main-transition-settings;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.main-btn--footer {
+  margin-left: 12px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn__footer-icon {
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.main-btn--modal {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

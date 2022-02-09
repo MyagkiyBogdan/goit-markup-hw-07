@@ -1,0 +1,21 @@
+.contacts-block__link {
+  display: block;
+  transition: color $main-transition-settings;
+  color: $footer-text-color;
+  &:focus,
+  &:hover {
+    color: $accent-text-color;
+  }
+}
+
+.contacts-block__link--white {
+  color: $white-text-color;
+}
+
+.contacts-block__list {
+  font-style: normal;
+}
+
+.contacts-block__item + .contacts-block__item {
+  margin-top: 9px;
+}

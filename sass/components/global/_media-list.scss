@@ -1,0 +1,45 @@
+.media-list {
+  display: flex;
+  justify-content: center;
+}
+
+.media__item + .media__item {
+  margin-left: 10px;
+}
+
+.media__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+
+  background-color: inherit;
+  transition: background-color $main-transition-settings;
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+}
+
+.media__link--gray-bg {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.media__link:hover .media__icon,
+.media__link:focus .media__icon {
+  fill: #ffffff;
+}
+
+.media__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill $main-transition-settings;
+}
+
+.media__icon--white {
+  fill: #ffffff;
+}

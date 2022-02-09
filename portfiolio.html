@@ -11,51 +11,46 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container nav-container">
-        <nav class="header__navigation">
-          <a href="./index.html" class="logo header-logo animate__heartBeat"
+      <div class="container container--header">
+        <nav class="page-navigation">
+          <a href="./index.html" class="logo header__logo animate-heartbeat"
             ><span class="logo__word">Web</span>Studio</a
           >
-          <ul class="header-menu-list header-menu-list__mix">
-            <li class="header-menu__item">
-              <a href="./index.html" class="header__link hover-effect__link">Студия </a>
+          <ul class="navigation-menu navigation-menu--postition">
+            <li class="navigation-menu__item">
+              <a href="./index.html" class="navigation-menu__link navigation-menu__link--hover"
+                >Студия
+              </a>
             </li>
-            <li class="header-menu__item">
-              <a href="./portfiolio.html" class="header__link header__link--current">Портфолио </a>
+            <li class="navigation-menu__item">
+              <a
+                href="./portfiolio.html"
+                class="navigation-menu__link navigation-menu__link--current"
+                >Портфолио
+              </a>
             </li>
-            <li class="header-menu__item">
-              <a href="#contacts" class="header__link link hover-effect__link">Контакты </a>
+            <li class="navigation-menu__item">
+              <a href="#contacts" class="navigation-menu__link navigation-menu__link--hover"
+                >Контакты
+              </a>
             </li>
           </ul>
         </nav>
-        <ul class="header-contact-list header-contact-list__mix">
-          <li class="header-contact-list__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="header__link contact-list__link hover-effect__link"
-            >
+        <ul class="contact-list contact-list--position">
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="contact-list__link hover-effect__link">
               <svg class="mail-icon">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="header-contact-list__item">
-            <a
-              href="tel:+380961111111"
-              class="header__link contact-list__link link hover-effect__link"
-            >
+          <li class="contact-list__item">
+            <a href="tel:+380961111111" class="contact-list__link link hover-effect__link">
               <svg class="tel-icon">
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
@@ -65,21 +60,25 @@
         </ul>
       </div>
     </header>
-    <main class>
-      <section class="works section">
+    <main>
+      <section class="section section-works">
         <div class="container">
           <!-- Cкрытый заголовок-->
-          <h1 class="works-title visually-hidden">Наши работы</h1>
-          <ul class="works__list works-filter">
-            <li class="works__item"><button type="button" class="works__btn">Все</button></li>
-            <li class="works__item"><button type="button" class="works__btn">Веб-сайты</button></li>
-            <li class="works__item">
-              <button type="button" class="works__btn">Приложения</button>
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="filter section-works__filter">
+            <li class="filter__item"><button type="button" class="filter__btn">Все</button></li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Веб-сайты</button>
             </li>
-            <li class="works__item"><button type="button" class="works__btn">Дизайн</button></li>
-            <li class="works__item"><button type="button" class="works__btn">Маркетинг</button></li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Приложения</button>
+            </li>
+            <li class="filter__item"><button type="button" class="filter__btn">Дизайн</button></li>
+            <li class="filter__item">
+              <button type="button" class="filter__btn">Маркетинг</button>
+            </li>
           </ul>
-          <ul class="works__list works-examples">
+          <ul class="works-examples">
             <li class="works-examples__item">
               <a href="" class="works-examples__link">
                 <div class="works-examples__tumb">
@@ -99,7 +98,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Технокряк</h2>
                   <p class="works-examples__text">Веб-сайт</p>
                 </div>
@@ -123,7 +122,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Постер New Orlean vs Golden Star</h2>
                   <p class="works-examples__text">Дизайн</p>
                 </div>
@@ -147,7 +146,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Ресторан Seafood</h2>
                   <p class="works-examples__text">Приложение</p>
                 </div>
@@ -171,7 +170,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Проект Prime</h2>
                   <p class="works-examples__text">Маркетинг</p>
                 </div>
@@ -195,7 +194,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Проект Boxes</h2>
                   <p class="works-examples__text">Приложение</p>
                 </div>
@@ -219,7 +218,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Inspiration has no Borders</h2>
                   <p class="works-examples__text">Веб-сайт</p>
                 </div>
@@ -243,7 +242,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Издание Limited Edition</h2>
                   <p class="works-examples__text">Дизайн</p>
                 </div>
@@ -267,7 +266,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Проект LAB</h2>
                   <p class="works-examples__text">Маркетинг</p>
                 </div>
@@ -291,7 +290,7 @@
                     class="works-examples__img"
                   />
                 </div>
-                <div class="work-examples-box">
+                <div class="work-examples__box">
                   <h2 class="works-examples__title">Growing Business</h2>
                   <p class="works-examples__text">Приложение</p>
                 </div>
@@ -304,7 +303,7 @@
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-contacts">
-          <a href="./index.html" class="footer-logo logo animate__heartBeat"
+          <a href="./index.html" class="footer-logo logo animate-heartbeat"
             ><span class="logo__word">Web</span>Studio</a
           >
           <address id="contacts">
