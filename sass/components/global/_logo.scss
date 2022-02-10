@@ -12,22 +12,22 @@
     transform: scale(1);
   }
 
-  6% {
+  5% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 
-  12% {
+  10% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
 
-  18% {
+  16% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 
-  24% {
+  22% {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
@@ -40,8 +40,8 @@
 .animate-heartbeat {
   -webkit-animation-name: heartBeat;
   animation-name: heartBeat;
-  -webkit-animation-duration: 10000ms;
-  animation-duration: 5000ms;
+  -webkit-animation-duration: 7000ms;
+  animation-duration: 7000ms;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;

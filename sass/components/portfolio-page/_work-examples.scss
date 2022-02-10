@@ -1,0 +1,77 @@
+.works-examples {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * #{$main-margin-right});
+  margin-bottom: calc(-1 * #{$main-margin-right});
+}
+
+.works-examples__item {
+  flex-basis: calc((100% - 3 * #{$main-margin-right}) / 3);
+  background-color: #ffffff;
+  margin-right: $main-margin-right;
+  margin-bottom: $main-margin-right;
+  border: 1px solid #eeeeee;
+}
+
+.works-examples__link {
+  display: block;
+  transition: box-shadow $main-transition-settings;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.works-examples__title {
+  margin-bottom: 4px;
+  font-weight: $font-weight-first;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: $letter-spacing-second;
+}
+
+.works-examples__text {
+  color: $second-text-color;
+  font-size: $second-font-size;
+  line-height: 1.87;
+}
+
+.work-examples__box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.works-examples__tumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.works-examples__link:hover .work-examples__overlay,
+.works-examples__link:focus .work-examples__overlay {
+  transform: translateY(0);
+}
+
+.work-examples__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(101%);
+  transition: transform $main-transition-settings;
+}
+
+.work-examples__overlay-text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: $white-text-color;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
